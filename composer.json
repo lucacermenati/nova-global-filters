@@ -1,0 +1,55 @@
+{
+    "name": "lucacermenati/nova-global-filters",
+    "description": "Session-backed global filters for Laravel Nova 5 dashboards: define filters in PHP, render them with one generic card, and make metrics respond to them.",
+    "keywords": ["laravel", "nova", "filters", "dashboard", "metrics"],
+    "license": "MIT",
+    "authors": [
+        {"name": "Luca Cermenati"}
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^11.0|^12.0|^13.0",
+        "laravel/nova": "^5.0"
+    },
+    "require-dev": {
+        "laravel/nova-devtool": "^1.7",
+        "laravel/pint": "^1.20",
+        "orchestra/testbench": "^9.0|^10.0|^11.0",
+        "pestphp/pest": "^3.0|^4.0"
+    },
+    "repositories": [
+        {"type": "composer", "url": "https://nova.laravel.com"}
+    ],
+    "autoload": {
+        "psr-4": {
+            "LucaCermenati\\NovaGlobalFilters\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LucaCermenati\\NovaGlobalFilters\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LucaCermenati\\NovaGlobalFilters\\NovaGlobalFiltersServiceProvider"
+            ],
+            "aliases": {
+                "NovaGlobalFilters": "LucaCermenati\\NovaGlobalFilters\\Facades\\NovaGlobalFilters"
+            }
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest",
+        "lint": "vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
