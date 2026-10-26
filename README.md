@@ -8,6 +8,10 @@ applying it refreshes the metrics in place without reloading the page.
 Ships with a `DateRangeFilter` (optional start and end date) and a `SectionHeader` card
 to group metrics under a title.
 
+Looking for a working example? The [nova-playground](https://github.com/lucacermenati/nova-playground)
+repository is a small Nova app that uses this package end to end (see
+[Example application](#example-application)).
+
 ## Requirements
 
 - PHP 8.2+
