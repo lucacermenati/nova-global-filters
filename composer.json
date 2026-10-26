@@ -1,11 +1,25 @@
 {
     "name": "lucacermenati/nova-global-filters",
     "description": "Session-backed global filters for Laravel Nova 5 dashboards: define filters in PHP, render them with one generic card, and make metrics respond to them.",
-    "keywords": ["laravel", "nova", "filters", "dashboard", "metrics"],
+    "keywords": [
+        "laravel",
+        "nova",
+        "filters",
+        "dashboard",
+        "metrics"
+    ],
+    "homepage": "https://github.com/lucacermenati/nova-global-filters",
     "license": "MIT",
     "authors": [
-        {"name": "Luca Cermenati"}
+        {
+            "name": "Luca Cermenati",
+            "email": "luca@igne.nl"
+        }
     ],
+    "support": {
+        "issues": "https://github.com/lucacermenati/nova-global-filters/issues",
+        "source": "https://github.com/lucacermenati/nova-global-filters"
+    },
     "require": {
         "php": "^8.2",
         "illuminate/support": "^11.0|^12.0|^13.0",
@@ -18,7 +32,10 @@
         "pestphp/pest": "^3.0|^4.0"
     },
     "repositories": [
-        {"type": "composer", "url": "https://nova.laravel.com"}
+        {
+            "type": "composer",
+            "url": "https://nova.laravel.com"
+        }
     ],
     "autoload": {
         "psr-4": {
@@ -50,6 +67,5 @@
             "pestphp/pest-plugin": true
         }
     },
-    "minimum-stability": "dev",
     "prefer-stable": true
 }

@@ -278,3 +278,19 @@ npm run dev     # or: npm run prod
 ```
 
 The compiled assets in `dist/` are committed; rebuild them after changing the Vue files.
+
+## Example application
+
+The [nova-playground](https://github.com/lucacermenati/nova-playground) repository is a
+small Laravel Nova application that uses this package end to end: it registers a
+`DateRangeFilter` and a fluent select filter, puts the cards on the dashboard and has
+Value, Trend and Progress metrics responding to them. Use it as a reference for wiring
+the package into your own project.
+
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md).
+
+## License
+
+MIT, see [LICENSE](LICENSE).
